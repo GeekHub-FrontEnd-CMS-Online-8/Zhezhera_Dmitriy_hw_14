@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hanoi Tower hw-14 ZHEZHERA_D</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="game">
+    <h1 class="game__title">Hanoi Tower Game</h1>
+    <h2 class="game__subtitle">Test yourself !!!</h2>
+    <p class="game__difficulty">
+        Set your difficulty <input class="game__difficulty-input" id="difficulty" type="number" min="3" placeholder="3">
+    </p>
+    <div class="game__btn-start-wrap">
+        <p class="game-timer" id="game-timer">00:00:00</p>
+        <button class="game__btn-start" id="game__btn-start">START GAME</button>
+        <p class="game-steps" id="game-steps">STEPS: 0</p>
+    </div>
+    <div id="game__field" class="game__field">
+        <div  class="game__tower game__tower--first">
+            <div id="tower1" class="game__tower-ring-box"></div>
+        </div>
+        <div class="game__tower game__tower--second">
+            <div id="tower2" class="game__tower-ring-box"></div>
+        </div>
+        <div class="game__tower game__tower--third">
+            <div id="tower3" class="game__tower-ring-box"></div>
+        </div>
+    </div>
+
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

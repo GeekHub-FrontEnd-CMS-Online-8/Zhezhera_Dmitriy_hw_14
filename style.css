@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+.game {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.game__title {
+    text-align: center;
+}
+
+.game__subtitle {
+    text-align: center;
+}
+
+.game__difficulty {
+    text-align: center;
+}
+
+.game__difficulty-input{
+    font-size: 26px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.game__btn-start-wrap {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.game-timer {
+    color: white;
+    background: gray;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.game-steps {
+    color: white;
+    background: gray;
+    padding: 20px;
+    font-size: 26px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.game__btn-start {
+    cursor: pointer;
+    background: red;
+    color: white;
+    font-size: 26px;
+    border-radius: 5px;
+    padding: 20px 35px;
+    transition: 300ms;
+}
+
+.game__btn-start:hover {
+    background: darkred;
+    transition: 300ms;
+}
+
+.game__field {
+    border: 2px solid gray;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.game__tower {
+    display: inline-block;
+    content: " ";
+    height: 250px;
+    width: 30px;
+    background: gray;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 100px 75px 25px;
+}
+
+.game__tower--first {
+}
+
+.game__tower--second {
+    margin-bottom: 125px;
+}
+
+.game__tower--third {
+
+}
+
+.game__tower-ring-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.draggable{
+    cursor: pointer;
+}
+.draggable:hover{
+    background: dodgerblue;
+}
+
+.game__ring{
+    height: 30px;
+    background: deepskyblue;
+    border-radius: 10px;
+    margin: 1px;
+}
+.game__ring:first-child{
+    margin-bottom: 0;
+}
